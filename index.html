@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>S4</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+          crossorigin="anonymous">
+  </head>
+  <body>
+    <img src="LAKERSBG.jpg" class="bg-image" alt="Lakers Background">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Los Angeles Lakers Starting 5</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto"> <!-- ms-auto to align items to the right -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Cards Section -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+          <!-- Card 1 -->
+          <div class="col-lg-2 col-md-3 col-sm-6 d-flex justify-content-center">
+            <div class="card">
+              <img src="img/LUKA.png" class="card-img-top" alt="Luka">
+              <div class="card-body">
+                <h5 class="card-title">Luka Doncic</h5>
+                <p class="card-text">Point Guard</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lukaModal">
+                  More Info
+                </button>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 2 -->
+          <div class="col-lg-2 col-md-3 col-sm-6 d-flex justify-content-center">
+            <div class="card">
+              <img src="img/AUSTIN.jpg" class="card-img-top" alt="Austin">
+              <div class="card-body">
+                <h5 class="card-title">Austin Reaves</h5>
+                <p class="card-text">Shooting Guard</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#austinModal">
+                  More Info
+                </button>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 3 -->
+          <div class="col-lg-2 col-md-3 col-sm-6 d-flex justify-content-center">
+            <div class="card">
+              <img src="img/GOAT.jpg" class="card-img-top" alt="GOAT">
+              <div class="card-body">
+                <h5 class="card-title">LeBron James</h5>
+                <p class="card-text">Small Forward</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lebronModal">
+                  More Info
+                </button>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 4 -->
+          <div class="col-lg-2 col-md-3 col-sm-6 d-flex justify-content-center">
+            <div class="card">
+              <img src="img/RUI.jpg" class="card-img-top" alt="Rui">
+              <div class="card-body">
+                <h5 class="card-title">Rui Hachimura</h5>
+                <p class="card-text">Power Forward</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ruiModal">
+                  More Info
+                </button>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 5 -->
+          <div class="col-lg-2 col-md-3 col-sm-6 d-flex justify-content-center">
+            <div class="card">
+              <img src="img/HAYES.jpg" class="card-img-top" alt="Hayes">
+              <div class="card-body">
+                <h5 class="card-title">Jaxson Hayes</h5>
+                <p class="card-text">Center</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hayesModal">
+                  More Info
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Modals -->
+    <!-- Luka Doncic Modal -->
+    <div class="modal fade" id="lukaModal" tabindex="-1" aria-labelledby="lukaModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="lukaModalLabel">Luka Doncic</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Position:</strong> Point Guard</p>
+            <p><strong>Height:</strong> 6'7"</p>
+            <p><strong>Weight:</strong> 230 lbs</p>
+            <p><strong>Description:</strong> At 26 years old, Luka Dončić is in the absolute prime of his career. After being traded to the Lakers in a blockbuster deal, he’s taken the league by storm, leading the purple and gold to new heights and cementing his status as one of the greatest players of his generation.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Austin Reaves Modal -->
+    <div class="modal fade" id="austinModal" tabindex="-1" aria-labelledby="austinModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="austinModalLabel">Austin Reaves</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Position:</strong> Shooting Guard</p>
+            <p><strong>Height:</strong> 6'5"</p>
+            <p><strong>Weight:</strong> 197 lbs</p>
+            <p><strong>Description:</strong> Austin Reaves, standing at 6'5" (1.96 meters), has become one of the most reliable and versatile players on the Lakers’ roster. Known for his basketball IQ, clutch performances, and team-first mentality, Reaves has solidified his role as a core piece of the team’s success.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LeBron James Modal -->
+    <div class="modal fade" id="lebronModal" tabindex="-1" aria-labelledby="lebronModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="lebronModalLabel">LeBron James</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Position:</strong> Small Forward</p>
+            <p><strong>Height:</strong> 6'9"</p>
+            <p><strong>Weight:</strong> 250 lbs</p>
+            <p><strong>Description:</strong> LeBron James is more than just a basketball player—he’s a cultural icon, a philanthropist, a businessman, and a role model. His journey from Akron to global superstardom is a testament to his hard work, resilience, and unwavering determination. Whether you call him Pookie Bear, The King, or Dad, one thing is clear: LeBron James has left an indelible mark on the world, and his legacy will live on forever.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rui Hachimura Modal -->
+    <div class="modal fade" id="ruiModal" tabindex="-1" aria-labelledby="ruiModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ruiModalLabel">Rui Hachimura</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Position:</strong> Power Forward</p>
+            <p><strong>Height:</strong> 6'8"</p>
+            <p><strong>Weight:</strong> 230 lbs</p>
+            <p><strong>Description:</strong> Rui Hachimura, standing at 6'8" (2.03 meters) with a strong, athletic build, has become an essential part of the Lakers' rotation. Known for his versatility, scoring ability, and improving defense, Rui has carved out a significant role for himself on a star-studded team.
+
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jaxson Hayes Modal -->
+    <div class="modal fade" id="hayesModal" tabindex="-1" aria-labelledby="hayesModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="hayesModalLabel">Jaxson Hayes</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Position:</strong> Center</p>
+            <p><strong>Height:</strong> 6'11"</p>
+            <p><strong>Weight:</strong> 220 lbs</p>
+            <p><strong>Description:</strong> Jaxson Hayes, standing at 6'11" (2.11 meters) with a lean, athletic frame, is known for his incredible leaping ability, rim-running, and shot-blocking prowess. In 2025, Hayes has continued to develop his game, becoming a key contributor for the Lakers as their energizer big man.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+            crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

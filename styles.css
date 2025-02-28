@@ -1,0 +1,140 @@
+/* Background Image Styling */
+.bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes sure the image fills the entire screen */
+    z-index: -1; /* Moves it behind all content */
+}
+
+/* Ensuring content is visible */
+body {
+    color: white; /* Keeps text readable */
+    position: relative;
+    font-family: 'Arial', sans-serif; /* Use a modern font */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #552583 !important; /* Lakers Purple */
+    padding: 1rem 2rem; /* Add padding for better spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem; /* Larger brand text */
+    font-weight: bold;
+    color: #FDB927 !important; /* Lakers Gold */
+}
+
+.navbar .nav-link {
+    color: #FDB927 !important; /* Lakers Gold */
+    font-weight: bold;
+    margin: 0 0.5rem; /* Add spacing between nav items */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar .nav-link:hover {
+    color: #ffffff !important; /* White on hover */
+}
+
+.navbar .navbar-text {
+    color: #FDB927 !important; /* Lakers Gold */
+    font-weight: bold;
+}
+
+/* Card Styling */
+.card {
+    background: rgba(0, 0, 0, 0) !important; /* Fully transparent */
+    border: none !important; /* Remove borders completely */
+    box-shadow: none !important; /* Remove shadow */
+    color: #FFD700 !important; /* Text remains readable */
+    font-weight: bold;
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+/* Ensure text is readable */
+.card-title {
+    color: white; /* Keep contrast */
+    font-weight: bold;
+}
+
+.card-text {
+    color: whitesmoke !important; /* Lakers gold with !important */
+    font-weight: bold;
+}
+
+.card-title, .card-text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Black shadow */
+    font-weight: bold;
+}
+
+/* Button styling */
+.card .btn {
+    background-color: #552583; /* Lakers purple */
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.card .btn:hover {
+    background-color: #FFD700; /* Gold on hover */
+    color: black;
+}
+
+.card-body {
+    background: rgba(0, 0, 0, 0.7) !important; /* Semi-transparent dark background */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Make all images the same size with hover effect */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background-color: transparent; /* Changed from #fff to transparent */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+}
+
+.card img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #FDB927; /* Lakers Gold */
+    border-color: #FDB927;
+    color: black;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.btn-primary:hover {
+    background-color: #d6a321;
+    border-color: #d6a321;
+}
+
+/* More aggressive card transparency */
+.card, 
+.card-body,
+.card-img, 
+.card-img-top, 
+.card-img-bottom,
+.card-header, 
+.card-footer {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+/* Make sure images don't have a background */
+.card img {
+    background-color: transparent !important;
+}
